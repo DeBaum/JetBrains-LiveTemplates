@@ -1,5 +1,7 @@
 # JetBrains LiveTemplates
 
+init repo in your [template folder](https://www.jetbrains.com/help/idea/2016.2/sharing-live-templates.html#config_file_location)
+
 ## Javascript
 
 ### `des`
@@ -25,17 +27,17 @@ console.log("variable", variable);
 import React, {Component, PropTypes} from "react";
 
 export default class FileName extends Component {
-    static propTypes = {
+  static propTypes = {
+  
+  };
 
-    }
-
-    render() {
-        return(
-        	<div>
-
-        	</div>
-        )
-    }
+  render() {
+    return(
+    	<div>
+    	
+      </div>
+    )
+  }
 }
 ```
 
@@ -68,7 +70,7 @@ propName: PropTypes.$type$
 
 ```
 <Choose> 
-    <When condition={$condition$}> </When>
-    <Otherwise> </Otherwise>
+  <When condition={$condition$}></When>
+  <Otherwise></Otherwise>
 </Choose>
 ```
