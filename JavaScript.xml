@@ -1,0 +1,22 @@
+<templateSet group="JavaScript">
+  <template name="des" value="$const$ {$field$} = $variable$;" description="es6 destructuring of js variable" toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="&quot;this.props&quot;" alwaysStopAt="true" />
+    <variable name="field" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true" />
+    <variable name="const" expression="" defaultValue="&quot;const&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="console.log(&quot;$variable$&quot;);" description="insert console.log" toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="clv" value="console.log(&quot;$variable$:&quot;, $variable$);" description="insert console.log with variable" toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
