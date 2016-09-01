@@ -1,29 +1,33 @@
 # JetBrains LiveTemplates
 
-init repo in your [template folder](https://www.jetbrains.com/help/idea/2016.2/sharing-live-templates.html#config_file_location)
+init this repo in your [template folder](https://www.jetbrains.com/help/idea/2016.2/sharing-live-templates.html#config_file_location) of your IDEA / Webstorm / PhpStorm IDE
+
+* [Javascript](#javascript)
+* [React](#react)
+* [JSX control statements](#jsx-control-statements)
 
 ## Javascript
 
 ### `des`
 
-```
+```js
 const {field} = variable;
 ```
 
 ### `cl`
-```
+```js
 console.log("message");
 ```
 
 ### `clv`
-```
+```js
 console.log("variable", variable);
 ```
 
 ## React
 
 ### `comp` 
-```
+```js
 import React, {Component, PropTypes} from "react";
 
 export default class FileName extends Component {
@@ -44,15 +48,15 @@ export default class FileName extends Component {
 ### `pt`
 
 * type is on of the following: func, object, array, bool, number, string
-```
-propName: PropTypes.$type$
+```js
+propName: PropTypes.type
 ```
 
 ## [JSX control statements](https://github.com/AlexGilleran/jsx-control-statements)
 
 ### `for`
 
-```
+```html
 <For each="item" of={collection} index="index">
 
 </For>
@@ -60,7 +64,7 @@ propName: PropTypes.$type$
 
 ### `if`
 
-```
+```html
 <If condition={condition}>
 
 </If>
@@ -68,7 +72,7 @@ propName: PropTypes.$type$
 
 ### `choose`
 
-```
+```html
 <Choose> 
   <When condition={$condition$}></When>
   <Otherwise></Otherwise>
