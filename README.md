@@ -26,6 +26,16 @@ console.log("variable", variable);
 
 ## React
 
+### `rlc`
+* inserts react LifeCycle-method:
+  * `componentWillMount`
+  * `componentDidMount`
+  * `componentWillReceiveProps`
+  * `shouldComponentUpdate`
+  * `componentWillUpdate`
+  * `componentDidUpdate`
+  * `componentWillUnmount`
+
 ### `comp` 
 ```js
 import React, {Component, PropTypes} from "react";
