@@ -15,11 +15,13 @@ const {field} = variable;
 ```
 
 ### `cl`
+
 ```js
 console.log("message");
 ```
 
 ### `clv`
+
 ```js
 console.log("variable", variable);
 ```
@@ -37,6 +39,7 @@ console.log("variable", variable);
   * `componentWillUnmount`
 
 ### `comp` 
+
 ```js
 import React, {Component, PropTypes} from "react";
 
@@ -58,6 +61,7 @@ export default class FileName extends Component {
 ### `pt`
 
 * type is on of the following: func, object, array, bool, number, string
+
 ```js
 propName: PropTypes.type
 ```
