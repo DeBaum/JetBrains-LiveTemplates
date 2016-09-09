@@ -26,6 +26,12 @@ console.log("message");
 console.log("variable", variable);
 ```
 
+### `cc`
+
+```js
+console.count("message");
+```
+
 ## React
 
 ### `rlc`
@@ -55,6 +61,14 @@ export default class FileName extends Component {
       </div>
     )
   }
+}
+```
+
+### `rc`
+
+```js
+constructor(props) {
+  super(props);
 }
 ```
 

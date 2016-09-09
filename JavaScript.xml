@@ -14,7 +14,13 @@
     </context>
   </template>
   <template name="clv" value="console.log(&quot;$variable$:&quot;, $variable$);" description="console.log(&quot;variable:&quot;, variable)" toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <variable name="variable" expression="completeSmart()" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="console.count(&quot;$message$&quot;)" description="console.count(&quot;message&quot;)" toReformat="false" toShortenFQNames="true">
+    <variable name="message" expression="fileNameWithoutExtension()" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
     </context>

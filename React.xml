@@ -14,7 +14,7 @@
       <option name="JSX_HTML" value="true" />
     </context>
   </template>
-  <template name="for" value="&lt;For each=&quot;$itemName$&quot; of={$collection$} index=&quot;index&quot;&gt;&#10;    $END$&#10;&lt;/For&gt;" description="JSX for control statement" toReformat="false" toShortenFQNames="true">
+  <template name="for" value="&lt;For each=&quot;$itemName$&quot; of={$collection$} index=&quot;index&quot;&gt;&#10;    $END$&#10;&lt;/For&gt;" description="JSX for control statement" toReformat="true" toShortenFQNames="true">
     <variable name="itemName" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true" />
     <variable name="collection" expression="" defaultValue="&quot;collection&quot;" alwaysStopAt="true" />
     <context>
@@ -41,10 +41,16 @@
       <option name="JS_EXPRESSION" value="true" />
     </context>
   </template>
-  <template name="rlc" value="$functionName$() {&#10;  $END$&#10;}" description="react Lifecicle method" toReformat="false" toShortenFQNames="true">
+  <template name="rlc" value="$functionName$() {&#10;  $END$&#10;}" description="react Lifecicle method" toReformat="true" toShortenFQNames="true">
     <variable name="functionName" expression="enum(&quot;componentWillMount&quot;,&quot;componentDidMount&quot;,&quot;componentWillReceiveProps&quot;,&quot;shouldComponentUpdate&quot;,&quot;componentWillUpdate&quot;,&quot;componentDidUpdate&quot;,&quot;componentWillUnmount&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rc" value="constructor(props) {&#10;  super(props);&#10;  $END$&#10;}" description="react constructor" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
 </templateSet>
