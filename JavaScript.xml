@@ -8,21 +8,27 @@
     </context>
   </template>
   <template name="cl" value="console.log(&quot;$variable$&quot;);" description="console.log(&quot;message&quot;)" toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="" defaultValue="jsMethodName()" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="clv" value="console.log(&quot;$variable$:&quot;, $variable$);" description="console.log(&quot;variable:&quot;, variable)" toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="completeSmart()" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <variable name="variable" expression="complete()" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="cc" value="console.count(&quot;$message$&quot;)" description="console.count(&quot;message&quot;)" toReformat="false" toShortenFQNames="true">
-    <variable name="message" expression="fileNameWithoutExtension()" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+  <template name="cc" value="console.count(&quot;$message$&quot;);" description="console.count(&quot;message&quot;)" toReformat="false" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="jsMethodName()" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="af" value="($params$) =&gt; {&#10;  $END$&#10;};" description="Arrow Function - ES6" toReformat="true" toShortenFQNames="true">
+    <variable name="params" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
     </context>
   </template>
 </templateSet>

@@ -32,6 +32,12 @@ console.log("variable", variable);
 console.count("message");
 ```
 
+### `af`
+
+```js
+(parameter) => {}
+```
+
 ## React
 
 ### `rlc`
