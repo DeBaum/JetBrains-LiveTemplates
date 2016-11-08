@@ -31,9 +31,9 @@
       <option name="JSX_HTML" value="true" />
     </context>
   </template>
-  <template name="pt" value="$propName$: PropTypes.$propType$" description="insert PropType definition" toReformat="true" toShortenFQNames="true">
-    <variable name="propName" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
-    <variable name="propType" expression="enum(&quot;func&quot;,&quot;object&quot;,&quot;array&quot;,&quot;bool&quot;,&quot;number&quot;,&quot;string&quot;)" defaultValue="" alwaysStopAt="true" />
+  <template name="pt" value="PropTypes.$propType$$isRequired$" description="insert PropType definition" toReformat="true" toShortenFQNames="true">
+    <variable name="propType" expression="enum(&quot;func&quot;,&quot;object&quot;,&quot;array&quot;,&quot;bool&quot;,&quot;number&quot;,&quot;string&quot;,&quot;any&quot;,&quot;arrayOf()&quot;,&quot;element&quot;,&quot;instanceOf()&quot;,&quot;node&quot;,&quot;objectOf()&quot;,&quot;oneOf([])&quot;,&quot;oneOfType([])&quot;,&quot;shape({})&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="isRequired" expression="enum(&quot;&quot;,&quot;.isRequired&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JS_EXPRESSION" value="true" />
     </context>

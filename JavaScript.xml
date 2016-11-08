@@ -1,6 +1,6 @@
 <templateSet group="JavaScript">
   <template name="des" value="$const$ {$field$} = $variable$;" description="es6 destructuring of js variable" toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="enum(&quot;this.props&quot;,&quot;this.state&quot;)" defaultValue="&quot;this.props&quot;" alwaysStopAt="true" />
+    <variable name="variable" expression="enum(&quot;this.props&quot;,&quot;this.state&quot;,&quot;this.refs&quot;)" defaultValue="&quot;this.props&quot;" alwaysStopAt="true" />
     <variable name="field" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true" />
     <variable name="const" expression="enum(&quot;const&quot;,&quot;let&quot;)" defaultValue="&quot;const&quot;" alwaysStopAt="true" />
     <context>
@@ -25,10 +25,34 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="af" value="($params$) =&gt; {&#10;  $END$&#10;};" description="Arrow Function - ES6" toReformat="true" toShortenFQNames="true">
+  <template name="af" value="($params$) =&gt; {&#10;  $END$&#10;}" description="Arrow Function - ES6" toReformat="true" toShortenFQNames="true">
     <variable name="params" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="cw" value="console.warn(&quot;$message$&quot;);" description="console.warn(&quot;message&quot;)" toReformat="false" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cf" value="$functionName$ ($params$) {&#10;  $END$&#10;}" description="insert function in class scope" toReformat="true" toShortenFQNames="true">
+    <variable name="functionName" expression="" defaultValue="&quot;func&quot;" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="caf" value="$functionName$ = ($params$) =&gt; {&#10;  $END$&#10;};" description="insert arrow function in class scope" toReformat="true" toShortenFQNames="true">
+    <variable name="functionName" expression="" defaultValue="&quot;func&quot;" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
 </templateSet>

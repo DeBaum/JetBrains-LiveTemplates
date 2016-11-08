@@ -1,0 +1,26 @@
+<templateSet group="js-testing">
+  <template name="it" value="it(&quot;$description$&quot;, function () {&#10;  $END$&#10;});" description="it(&quot;description&quot;, fn)" toReformat="true" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="&quot;works&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ass" value="assert.$fn$($END$);" description="assert (chai)" toReformat="true" toShortenFQNames="true">
+    <variable name="fn" expression="enum(&quot;isOk&quot;,&quot;isNotOk&quot;,&quot;equal&quot;,&quot;notEqual&quot;,&quot;strictEqual&quot;,&quot;notStrictEqual&quot;,&quot;deepEqual&quot;,&quot;notDeepEqual&quot;,&quot;isAbove&quot;,&quot;isAtLeast&quot;,&quot;isBelow&quot;,&quot;isAtMost&quot;,&quot;isTrue&quot;,&quot;isNotTrue&quot;,&quot;isFalse&quot;,&quot;isNotFalse&quot;,&quot;isNull&quot;,&quot;isNotNull&quot;,&quot;isNaN&quot;,&quot;isNotNaN&quot;,&quot;isUndefined&quot;,&quot;isDefined&quot;,&quot;isFunction&quot;,&quot;isNotFunction&quot;,&quot;isObject&quot;,&quot;isNotObject&quot;,&quot;isArray&quot;,&quot;isNotArray&quot;,&quot;isString&quot;,&quot;isNotString&quot;,&quot;isNumber&quot;,&quot;isNotNumber&quot;,&quot;isBoolean&quot;,&quot;isNotBoolean&quot;)" defaultValue="&quot;isTrue&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="shallow" value="const $varName$ = shallow(&lt;$END$ /&gt;); " description="shallow(&lt;Component /&gt;)" toReformat="true" toShortenFQNames="true">
+    <variable name="varName" expression="" defaultValue="&quot;wrapper&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="mount" value="const $varName$ = mount(&lt;$END$ /&gt;); " description="mount(&lt;Component /&gt;)" toReformat="true" toShortenFQNames="true">
+    <variable name="varName" expression="" defaultValue="&quot;wrapper&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
