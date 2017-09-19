@@ -3,7 +3,7 @@
 Init this repo in your [template folder](https://www.jetbrains.com/help/idea/2016.2/sharing-live-templates.html#config_file_location) of your IDEA / Webstorm / PhpStorm IDE
 
 * [Javascript](#javascript)
-** [Console](#console)
+  * [Console](#console)
 * [MobX](#mobx)
 * [React](#react)
 * [JSX control statements](#jsx-control-statements)
@@ -92,7 +92,7 @@ Insert a *e*xport *d*efault *c*lass statement:
 
 ```js
 export default class className {
-  
+
 }
 ```
 
