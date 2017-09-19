@@ -12,7 +12,7 @@ Init this repo in your [template folder](https://www.jetbrains.com/help/idea/201
 
 #### `des`
 
-Insert ES6 *des*tructuring statement:
+Insert ES6 **des**tructuring statement:
 
 ```js
 const {field} = variable;
@@ -20,7 +20,7 @@ const {field} = variable;
 
 #### `im`
 
-Insert *im*port statement:
+Insert **im**port statement:
 (Type: 1. modulePath, 2. moduleName)
 
 ```js
@@ -29,7 +29,7 @@ import moduleName from "modulePath";
 
 #### `fn`
 
-Insert *f*unctio*n* expression:
+Insert **f**unctio**n** expression:
 
 ```js
 function functionName(params) {
@@ -39,7 +39,7 @@ function functionName(params) {
 
 #### `af`
 
-Insert *a*rrow-*f*unction:
+Insert **a**rrow-**f**unction:
 
 ```js
 (parameter) => {}
@@ -47,7 +47,7 @@ Insert *a*rrow-*f*unction:
 
 #### `afn`
 
-Insert *a*nonymous-*f*unctio*n*:
+Insert **a**nonymous-**f**unctio**n**:
 
 ```js
 function (params) {
@@ -57,7 +57,7 @@ function (params) {
 
 #### `cf`
 
-Insert function in class scope (*c*lass-*f*unction):
+Insert function in class scope (**c**lass-**f**unction):
 
 ```js
 functionName(params) {
@@ -67,7 +67,7 @@ functionName(params) {
 
 #### `caf`
 
-Insert arrow function in class scope (*c*lass-*a*rrow-*f*unction):
+Insert arrow function in class scope (**c**lass-**a**rrow-**f**unction):
 
 ```js
 functionName = (params) => {
@@ -77,7 +77,7 @@ functionName = (params) => {
 
 #### `iife`
 
-Insert a *i*mmediately *i*nvoked *f*unction *e*xpression:
+Insert a **i**mmediately **i**nvoked **f**unction **e**xpression:
 (Can be used to wrap current selection)
 
 ```js
@@ -88,7 +88,7 @@ Insert a *i*mmediately *i*nvoked *f*unction *e*xpression:
 
 #### `edc`
 
-Insert a *e*xport *d*efault *c*lass statement:
+Insert a **e**xport **d**efault **c**lass statement:
 
 ```js
 export default class className {
@@ -98,7 +98,7 @@ export default class className {
 
 #### `edf`
 
-Insert a *e*xport *d*efault *f*unction statement:
+Insert a **e**xport **d**efault **f**unction statement:
 
 ```js
 export default function (params) {
@@ -110,7 +110,7 @@ export default function (params) {
 
 #### `cl`
 
-Insert *c*onsole.*l*og statement:
+Insert **c**onsole.**l**og statement:
 
 ```js
 console.log("message");
@@ -118,7 +118,7 @@ console.log("message");
 
 #### `clv`
 
-Insert *c*onsole.*l*og statement with *v*ariable:
+Insert **c**onsole.**l**og statement with **v**ariable:
 
 ```js
 console.log("variable:", variable);
@@ -126,7 +126,7 @@ console.log("variable:", variable);
 
 #### `cc`
 
-Insert *c*onsole.*c*ount statement:
+Insert **c**onsole.**c**ount statement:
 
 ```js
 console.count("message");
@@ -134,7 +134,7 @@ console.count("message");
 
 #### `cw`
 
-Insert *c*onsole.*w*arn statement:
+Insert **c**onsole.**w**arn statement:
 
 ```js
 console.warn("message");
@@ -142,7 +142,7 @@ console.warn("message");
 
 #### `cd`
 
-Insert *c*onsole.*d*ebug statement:
+Insert **c**onsole.**d**ebug statement:
 
 ```js
 console.debug("message");
@@ -150,7 +150,7 @@ console.debug("message");
 
 #### `cd`
 
-Insert *c*onsole.*d*ebug statement with *v*ariable:
+Insert **c**onsole.**d**ebug statement with **v**ariable:
 
 ```js
 console.debug("variable:", variable);
@@ -160,7 +160,7 @@ console.debug("variable:", variable);
 
 #### `ms`
 
-Insert *M*obX *S*tore template:
+Insert **M**obX **S**tore template:
 
 ```js
 import {observable, computed, action} from "mobx";
@@ -173,18 +173,18 @@ export default class className {
 ## React
 
 #### `rlc`
-* inserts react LifeCycle-method:
-  * `componentWillMount`
-  * `componentDidMount`
-  * `componentWillReceiveProps`
-  * `shouldComponentUpdate`
-  * `componentWillUpdate`
-  * `componentDidUpdate`
-  * `componentWillUnmount`
+inserts **R**eact **L**ife**C**ycle-method:
+* `componentWillMount`
+* `componentDidMount`
+* `componentWillReceiveProps`
+* `shouldComponentUpdate`
+* `componentWillUpdate`
+* `componentDidUpdate`
+* `componentWillUnmount`
 
 #### `comp` 
 
-Insert *R*eact *C*omponent:
+Insert **R**eact **C**omponent:
 
 ```js
 import React, {Component} from "react";
@@ -207,7 +207,7 @@ export default class $componentName$ extends Component {
 
 #### `rc`
 
-Insert *R*eact *C*onstructor:
+Insert **R**eact **C**onstructor:
 
 ```js
 constructor(props) {
@@ -217,7 +217,7 @@ constructor(props) {
 
 #### `pt`
 
-Insert *P*rop*T*ype definition (see: [React Docs: Component](https://facebook.github.io/react/docs/react-component.html)):
+Insert **P**rop**T**ype definition (see: [React Docs: Component](https://facebook.github.io/react/docs/react-component.html)):
 
 ```js
 propName: PropTypes.type
