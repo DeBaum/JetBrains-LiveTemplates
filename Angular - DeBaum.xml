@@ -1,0 +1,14 @@
+<templateSet group="Angular - DeBaum">
+  <template name="alc" value="$functionName$() {&#10;  $END$&#10;}" description="Angular lifecicle hook" toReformat="true" toShortenFQNames="true">
+    <variable name="functionName" expression="enum(&quot;ngOnChanges&quot;,&quot;ngOnInit&quot;,&quot;ngDoCheck&quot;,&quot;ngAfterContentInit&quot;,&quot;ngAfterContentChecked&quot;,&quot;ngAfterViewInit&quot;,&quot;ngAfterViewChecked&quot;,&quot;ngOnDestroy&quot;)" defaultValue="&quot;ngOnInit&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ei" value="export interface $InterfaceName$ {&#10;    $END$&#10;}" description="export interface" toReformat="false" toShortenFQNames="true">
+    <variable name="InterfaceName" expression="" defaultValue="capitalize(camelCase(fileNameWithoutExtension()))" alwaysStopAt="true" />
+    <context>
+      <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

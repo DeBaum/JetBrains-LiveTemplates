@@ -1,0 +1,8 @@
+<templateSet group="Global - DeBaum">
+  <template name="fib" value="$fibNumber$" description="Fibonacci sequnce" toReformat="false" toShortenFQNames="true">
+    <variable name="fibNumber" expression="enum(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;5&quot;,&quot;8&quot;,&quot;13&quot;,&quot;21&quot;,&quot;34&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
